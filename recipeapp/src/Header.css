@@ -1,3 +1,8 @@
+  #getBut {
+    padding: 13px 3px;
+    background-color: #ededed;
+    border-radius: 3px;
+  }
   #headingId {
     width: 100%;
     text-align: center;
@@ -20,10 +25,4 @@
     border-radius: 8px;
     margin-right: 18px;
     text-align: center;
-  }
-
-  #getBut {
-    padding: 13px 3px;
-    background-color: #ededed;
-    border-radius: 3px;
   }
