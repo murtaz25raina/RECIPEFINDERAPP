@@ -1,0 +1,29 @@
+  #headingId {
+    width: 100%;
+    text-align: center;
+    margin: 4px;
+    font-size: 40px;
+    color: #80696a;
+    margin-right:50px; 
+  }
+
+  .subHeading {
+    width:100%;
+    text-align: center;
+    padding: 15px 0px;
+  }
+
+  
+#inpRec {
+    padding: 10px 7px;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-right: 18px;
+    text-align: center;
+  }
+
+  #getBut {
+    padding: 13px 3px;
+    background-color: #ededed;
+    border-radius: 3px;
+  }
