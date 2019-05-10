@@ -48,13 +48,13 @@ class Header extends Component {
      getRecipeHandler = async (e) =>{
         e.preventDefault(); //used to prevent default behaviour like refreshing of page after submission
         let recipeName = this.state.recipeName;
-          recipeName=(document.getElementById('inpRec').value);// food name is retrieved from the input box
-          await this.setState({recipeName:recipeName}); 
-          await this.getDataHandler(this.state.recipeName);//getDataHandler is called and recipe name is passed as a param
-         await this.props.onSubmitHandler(this.state.recipeName,this.state.foodarray,this.state.status);
+        recipeName=(document.getElementById('inpRec').value);// food name is retrieved from the input box
+        await this.setState({recipeName:recipeName}); 
+        await this.getDataHandler(this.state.recipeName);//getDataHandler is called and recipe name is passed as a param
+        await this.props.onSubmitHandler(this.state.recipeName,this.state.foodarray,this.state.status);
          // the onSubmitHandler was passed as a props in App.js to Header component
+         }
          
-        }
    render(){
     return (
      <div className="heading">
