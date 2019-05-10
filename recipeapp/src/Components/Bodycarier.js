@@ -1,12 +1,11 @@
-import React ,{Component} from 'react';
+import React from 'react';
 import '../Bodycarier.css';
 
-
-class Bodycarier extends Component {
-    render () {
-        if((this.props.status).length===0){
+// this component simply prints the data using map. 
+const Bodycarier =(props)=> {
+        if((props.status).length===0){
         return (
-            (this.props.recipeStuff).map((value,index)=>{
+            (props.recipeStuff).map((value,index)=>{
                return ( 
          <div  key={value.idMeal} className="box-container">
          <div id="recipeHead">{value.strMeal}<spam style={{float :'right',marginRight :'20px',color : "white"}}><i  class="fa like" onClick={function (){
@@ -59,11 +58,11 @@ class Bodycarier extends Component {
          else {
           return (
             <div>
-                <p id="failedResult">{this.props.status}</p>
+                <p id="failedResult">{props.status}</p>
             </div>
           );}
         
-    }
+    
 
 }
 export default Bodycarier;
